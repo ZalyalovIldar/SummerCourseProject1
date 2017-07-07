@@ -37,6 +37,7 @@ class ViewController: UIViewController {
         let isOk = checkFields()
         
         if isOk == true {
+              performSegue(withIdentifier: "segue", sender: nil)
               loginButton.setTitle("Ok", for: .normal)
         }
         else {
