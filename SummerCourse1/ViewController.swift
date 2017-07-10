@@ -9,10 +9,18 @@
 import UIKit
 
 let myConst = "String"
+let loginNameKey = "UserLoginName"
+
+
+struct User {
+    var name: String
+}
 
 class ViewController: UIViewController {
     @IBOutlet weak var loginTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
+    
+    static let vcName: String = String(describing: self)
     
     var myArray:[String]!
     
@@ -20,9 +28,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        let user = User(name: "asjdas")
+        
+        if UserDefaults.standard.object(forKey: loginNameKey) != nil {
+            performSegue(withIdentifier: "segue", sender: nil)
+        }
+        
     }
 
-    
     func checkFields() -> Bool{
         var isFieldsCorrect = false
         
@@ -33,10 +46,25 @@ class ViewController: UIViewController {
         return isFieldsCorrect
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let destination = segue.destination as! UITabBarController
+        
+        guard let vc1 = destination.viewControllers?[0] as? ViewController1 else { return }
+        
+        vc1.textForTextLabel = loginTF.text!
+    }
+    
     @IBAction func loginButtonPressed(_ loginButton: UIButton) {
         let isOk = checkFields()
         
         if isOk == true {
+            
+              UserDefaults.standard.set(loginTF.text, forKey: loginNameKey)
+            
+              UserDefaults.standard.synchronize()
+            
               performSegue(withIdentifier: "segue", sender: nil)
               loginButton.setTitle("Ok", for: .normal)
         }
