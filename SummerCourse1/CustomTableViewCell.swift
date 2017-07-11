@@ -17,4 +17,12 @@ class CustomTableViewCell: UITableViewCell {
         // Initialization code
     }
     
+    func prepare(with model: CellData) {
+        nameLabel.text = model.cellText
+        swiftImageView.image = model.cellImage
+        
+        let someInt = 15
+    
+    }
+    
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7C0382821F136FA2008A46F0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0382811F136FA2008A46F0 /* DetailViewController.swift */; };
+		7C2D75481F14C21F00200B26 /* SomeNewFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2D75471F14C21F00200B26 /* SomeNewFile.swift */; };
 		7C5FBA501F13788F0041D249 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5FBA4E1F13788F0041D249 /* CustomTableViewCell.swift */; };
 		7C5FBA531F137B510041D249 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5FBA521F137B510041D249 /* ViewController1.swift */; };
 		7CB72FB41F0F7555008ED813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB72FB31F0F7555008ED813 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		7C0382811F136FA2008A46F0 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7C2D75471F14C21F00200B26 /* SomeNewFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeNewFile.swift; sourceTree = "<group>"; };
 		7C5FBA4E1F13788F0041D249 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		7C5FBA521F137B510041D249 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		7CB72FB01F0F7555008ED813 /* SummerCourse1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SummerCourse1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +70,7 @@
 				7C0382811F136FA2008A46F0 /* DetailViewController.swift */,
 				7C5FBA4E1F13788F0041D249 /* CustomTableViewCell.swift */,
 				7CB72FC51F0F9B34008ED813 /* ViewController2.swift */,
+				7C2D75471F14C21F00200B26 /* SomeNewFile.swift */,
 				7CB72FB71F0F7555008ED813 /* Main.storyboard */,
 				7CB72FBA1F0F7555008ED813 /* Assets.xcassets */,
 				7CB72FBC1F0F7555008ED813 /* LaunchScreen.storyboard */,
@@ -151,6 +154,7 @@
 				7C5FBA531F137B510041D249 /* ViewController1.swift in Sources */,
 				7CB72FB61F0F7555008ED813 /* ViewController.swift in Sources */,
 				7C5FBA501F13788F0041D249 /* CustomTableViewCell.swift in Sources */,
+				7C2D75481F14C21F00200B26 /* SomeNewFile.swift in Sources */,
 				7CB72FB41F0F7555008ED813 /* AppDelegate.swift in Sources */,
 				7CB72FC61F0F9B34008ED813 /* ViewController2.swift in Sources */,
 				7C0382821F136FA2008A46F0 /* DetailViewController.swift in Sources */,
